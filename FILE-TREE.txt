@@ -1,0 +1,148 @@
+Instacart Profitability Calculator - File Structure
+====================================================
+
+instacart-calculator/
+│
+├── 📄 index.html                    # HTML entry point
+├── 📄 package.json                  # Dependencies and scripts
+├── 📄 vite.config.ts               # Vite build configuration
+├── 📄 tsconfig.json                # TypeScript configuration
+├── 📄 tsconfig.node.json           # TypeScript config for Node
+├── 📄 .gitignore                   # Git ignore rules
+│
+├── 📚 Documentation/
+│   ├── README.md                    # Main documentation (formulas, setup, usage)
+│   ├── QUICK-START.md              # 3-step setup guide
+│   ├── EXAMPLES.md                  # Sample calculations & scenarios
+│   ├── DEPLOYMENT.md                # Deployment instructions (5 options)
+│   ├── PROJECT-SUMMARY.md           # Complete project overview
+│   └── FILE-TREE.txt               # This file
+│
+├── 📁 src/                         # Source code directory
+│   │
+│   ├── 📄 main.tsx                 # React entry point
+│   ├── 📄 App.tsx                  # Main application component (state management)
+│   ├── 📄 App.css                  # All application styles
+│   ├── 📄 index.css                # Global CSS reset
+│   ├── 📄 types.ts                 # TypeScript interfaces
+│   ├── 📄 vite-env.d.ts           # Vite type definitions
+│   │
+│   ├── 📁 components/              # React components
+│   │   ├── InputsPanel.tsx        # Left panel: all user inputs
+│   │   ├── ResultsSummary.tsx     # Top results: profit summary & status
+│   │   ├── KeyMetrics.tsx         # Bottom results: metrics grid
+│   │   └── MetricDisplay.tsx      # Reusable: single metric display
+│   │
+│   └── 📁 utils/                   # Utility functions
+│       ├── calculations.ts         # All business logic (pure functions)
+│       └── formatting.ts           # Number/currency formatting helpers
+│
+└── 📁 public/                      # Static assets (currently empty)
+
+
+FILE DESCRIPTIONS
+=================
+
+🔧 Configuration Files:
+----------------------
+package.json          - npm dependencies, scripts (dev, build, preview)
+vite.config.ts        - Vite configuration (React plugin setup)
+tsconfig.json         - TypeScript compiler settings
+tsconfig.node.json    - TypeScript config for build tools
+.gitignore           - Git ignore patterns
+
+📄 Core Application:
+-------------------
+src/main.tsx          - React app initialization and mounting
+src/App.tsx           - Main component: state, logic orchestration
+src/types.ts          - TypeScript interfaces for data structures
+
+🎨 Styling:
+-----------
+src/App.css           - All component styles (cards, inputs, metrics)
+src/index.css         - Global resets and base styles
+
+🧩 Components:
+--------------
+InputsPanel.tsx       - Three input sections with helper text
+ResultsSummary.tsx    - Profit display with color-coded status badge
+KeyMetrics.tsx        - 6 calculated metrics in a grid
+MetricDisplay.tsx     - Reusable metric card with label/value/tooltip
+
+⚙️ Business Logic:
+-----------------
+calculations.ts       - 10+ pure functions for all calculations
+                       (ROAS, margins, investment rate, etc.)
+formatting.ts         - Currency, percentage, ratio formatting
+
+📖 Documentation:
+----------------
+README.md             - Complete guide: setup, usage, formulas, extension
+QUICK-START.md        - Fast 3-step setup instructions
+EXAMPLES.md           - 3 sample scenarios with full calculations
+DEPLOYMENT.md         - 5 deployment options (Netlify, Vercel, etc.)
+PROJECT-SUMMARY.md    - Project overview and feature checklist
+FILE-TREE.txt         - This structure guide
+
+
+COMPONENT HIERARCHY
+===================
+
+App (main.tsx)
+└── App.tsx
+    ├── InputsPanel
+    │   └── (input fields organized in 3 sections)
+    │
+    └── (Results Column)
+        ├── ResultsSummary
+        │   └── (profit, margin, status badge)
+        │
+        └── KeyMetrics
+            └── MetricDisplay (×6)
+                └── (label, value, description)
+
+
+DATA FLOW
+=========
+
+User Input
+    ↓
+App.tsx (state)
+    ↓
+calculations.ts (pure functions)
+    ↓
+formatting.ts (display formatting)
+    ↓
+Results Components (display)
+
+
+KEY FILES TO START WITH
+=======================
+
+1. README.md          - Understand what the app does
+2. QUICK-START.md     - Get it running locally
+3. App.tsx            - See how state and components connect
+4. calculations.ts    - Understand the business logic
+5. EXAMPLES.md        - See it in action with sample data
+
+
+KEY FILES FOR CUSTOMIZATION
+===========================
+
+Add new calculation:    calculations.ts + types.ts
+Add new input field:    InputsPanel.tsx + types.ts + App.tsx
+Change styling:         App.css
+Add new metric display: KeyMetrics.tsx + MetricDisplay.tsx
+Change formulas:        calculations.ts (pure functions)
+
+
+TOTAL FILE COUNT
+================
+
+TypeScript/TSX:  12 files
+CSS:             2 files
+Config:          5 files
+Documentation:   6 files
+HTML:            1 file
+--------------------------
+TOTAL:           26 files

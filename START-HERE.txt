@@ -1,0 +1,93 @@
+═══════════════════════════════════════════════════════════════
+   INSTACART CALCULATOR - START HERE
+═══════════════════════════════════════════════════════════════
+
+🚀 GETTING STARTED (3 SIMPLE STEPS):
+
+Step 1: Open Terminal/Command Prompt
+---------------------------------------
+Windows: Press Win+R, type "cmd", press Enter
+Mac: Press Cmd+Space, type "terminal", press Enter
+Linux: Press Ctrl+Alt+T
+
+Step 2: Navigate to This Folder
+---------------------------------------
+Type this command (replace PATH with where you extracted):
+
+    cd PATH/instacart-calculator
+
+For example:
+    cd ~/Downloads/instacart-calculator
+    cd C:\Users\YourName\Downloads\instacart-calculator
+
+Step 3: Run These Commands
+---------------------------------------
+Copy and paste these ONE AT A TIME:
+
+    npm install
+
+Wait for it to finish (takes ~30 seconds), then:
+
+    npm run dev
+
+You'll see a URL like: http://localhost:5173/
+
+Step 4: Open in Browser
+---------------------------------------
+Copy the URL and paste it in your web browser!
+
+═══════════════════════════════════════════════════════════════
+
+✅ SUCCESS LOOKS LIKE:
+
+Terminal shows:
+    VITE v5.0.0  ready in 500 ms
+    ➜  Local:   http://localhost:5173/
+
+Browser shows:
+    The Instacart Calculator interface!
+
+═══════════════════════════════════════════════════════════════
+
+❌ TROUBLESHOOTING:
+
+Problem: "npm: command not found"
+Solution: Install Node.js from https://nodejs.org/
+
+Problem: "vite: not found"  
+Solution: You forgot Step 3! Run "npm install" first
+
+Problem: Nothing happens
+Solution: Make sure you opened the URL in your browser
+
+Problem: Still stuck?
+Solution: Read SETUP-HELP.md for detailed help
+
+═══════════════════════════════════════════════════════════════
+
+📖 WHAT'S INCLUDED:
+
+✓ Complete portfolio management
+✓ Multi-product comparison  
+✓ Engagement funnel analysis
+✓ Customer acquisition metrics
+✓ Historical tracking
+✓ Professional reports
+
+═══════════════════════════════════════════════════════════════
+
+🎯 QUICK REFERENCE:
+
+Start the app:       npm run dev
+Stop the app:        Press Ctrl+C
+Reinstall:           npm install
+Build for web:       npm run build
+
+═══════════════════════════════════════════════════════════════
+
+Need more help? Check these files:
+• SETUP-HELP.md - Detailed troubleshooting
+• README.md - Full documentation
+• QUICK-START.md - Feature guide
+
+═══════════════════════════════════════════════════════════════
